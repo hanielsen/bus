@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest="b2.appcache" lang="da">
+<head>
+<meta charset="utf-8">
+<title>Bus afgang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="school-bus.png">
+<link rel="stylesheet" href="b2.css">
+</head>
+
+<body>
+<div class="dropdown">
+    <button onclick="dropfunction(d1,d2)" class="dropbtn">
+        <img class="nodrop" src="ic_directions_bus_black_24dp_1x.png" />
+        <div id="drop1" class="dropcontent">
+            <a href="#" onclick="f(l11,r11)">11</a>
+            <a href="#" onclick="f(l12,r12)">12</a>
+            <a href="#" onclick="f(l15,r15)">15</a>
+            <a href="#" onclick="f(l6A,r6A)">6A</a>
+            <a href="#" onclick="ff(0,l11,r11,l6A,r6A)">11-6A</a>
+            <a href="#" onclick="ff(0,l12,r12,l6A,r6A)">12-6A</a>
+            <a href="#" onclick="ff(0,l15,r15,l6A,r6A)">15-6A</a>
+            <a href="#" onclick="fff(0,l11,r11,l12,r12,l15,r15)">11-12-15</a>
+        </div>
+    </button>
+    <button id="retur" class="dropbtn"><img src="ic_arrow_back_black_24dp_1x.png"/></button>
+    <button id="udag" onclick="dropfunction(d2,d1)" class="dropbtn">
+        <img class="nodrop" src="ic_view_day_black_24dp_1x.png"/>
+        <div id="drop2" class="dropcontent">
+            <a href="#" id="ud0">Hverdag</a>
+            <a href="#" id="ud1">Lørdag</a>
+            <a href="#" id="ud2">Søndag</a>
+        </div>
+    </button>
+</div>
+  
+<div id="main"></div>
+
+<script src="b2.js"></script>
+</body>
+</html>

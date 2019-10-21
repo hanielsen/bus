@@ -1,0 +1,91 @@
+body {
+    font-family:sans-serif;
+}
+
+table {
+    font-size:.75em;
+    border-collapse:collapse;
+}
+
+td,th {
+    padding:.25em;
+}
+
+th {
+    padding-right:.5em;
+}
+
+tr {
+    padding:.075em;
+}
+
+tr:nth-child(even) {
+    background:#eee;
+}
+
+h1 {
+    margin-bottom:.3em;
+    font-size:1em !important;
+}
+
+h2 {
+    margin:.1em;  
+    font-size:.75em !important;
+}
+
+.containtbl {
+    float:left;
+    overflow:auto;
+    margin-right:2em;
+}
+
+.dropdown {
+    position:relative;
+}
+
+.dropbtn {
+    background-color:#fff;
+    color:black;
+    padding:0em;
+    border:none;
+    margin-right:.3em;
+    cursor:pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color:#eee;
+}
+
+.dropcontent {
+    position:absolute;
+    margin-top:.5em;
+    margin-left:0em;
+    background-color:#eee;
+    min-width:auto;
+    overflow:auto;
+    padding:0em;
+    box-shadow:0px .5em 1em 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropcontent a {
+    color:black;
+    padding:.125em;
+    font-size:1.5em;
+    text-decoration:none;
+    text-align:left;
+    display:block;
+    margin:0em;
+}
+
+.dropcontent a:nth-of-type(even) {
+    background:#fff;
+}
+
+.dropcontent a:hover {
+    background-color:#cfc;
+}
+
+#main {
+    overflow:auto;
+}
